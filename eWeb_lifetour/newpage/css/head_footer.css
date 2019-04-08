@@ -1,0 +1,616 @@
+﻿/*! ============================================================================
+   五福旅遊頁頭頁尾通用樣式表 v20180511 （原始格式與註解請見 head_footer.scss）
+============================================================================ !*/
+/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
+html {
+   line-height: 1.15;
+   -ms-text-size-adjust: 100%;
+   -webkit-text-size-adjust: 100%
+}
+
+body {
+   margin: 0
+}
+
+article,
+aside,
+footer,
+header,
+nav,
+section {
+   display: block
+}
+
+h1 {
+   font-size: 2em;
+   margin: 0.67em 0
+}
+
+figcaption,
+figure,
+main {
+   display: block
+}
+
+figure {
+   margin: 1em 40px
+}
+
+hr {
+   box-sizing: content-box;
+   height: 0;
+   overflow: visible
+}
+
+pre {
+   font-family: monospace, monospace;
+   font-size: 1em
+}
+
+a {
+   background-color: transparent;
+   -webkit-text-decoration-skip: objects
+}
+
+abbr[title] {
+   border-bottom: none;
+   text-decoration: underline;
+   text-decoration: underline dotted
+}
+
+b,
+strong {
+   font-weight: inherit
+}
+
+b,
+strong {
+   font-weight: bolder
+}
+
+code,
+kbd,
+samp {
+   font-family: monospace, monospace;
+   font-size: 1em
+}
+
+dfn {
+   font-style: italic
+}
+
+mark {
+   background-color: #ff0;
+   color: #000
+}
+
+small {
+   font-size: 80%
+}
+
+sub,
+sup {
+   font-size: 75%;
+   line-height: 0;
+   position: relative;
+   vertical-align: baseline
+}
+
+sub {
+   bottom: -0.25em
+}
+
+sup {
+   top: -0.5em
+}
+
+audio,
+video {
+   display: inline-block
+}
+
+audio:not([controls]) {
+   display: none;
+   height: 0
+}
+
+img {
+   border-style: none
+}
+
+svg:not(:root) {
+   overflow: hidden
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+   font-family: sans-serif;
+   font-size: 100%;
+   line-height: 1.15;
+   margin: 0
+}
+
+button,
+input {
+   overflow: visible
+}
+
+button,
+select {
+   text-transform: none
+}
+
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+   -webkit-appearance: button
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+   border-style: none;
+   padding: 0
+}
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+   outline: 1px dotted ButtonText
+}
+
+fieldset {
+   padding: 0.35em 0.75em 0.625em
+}
+
+legend {
+   box-sizing: border-box;
+   color: inherit;
+   display: table;
+   max-width: 100%;
+   padding: 0;
+   white-space: normal
+}
+
+progress {
+   display: inline-block;
+   vertical-align: baseline
+}
+
+textarea {
+   overflow: auto
+}
+
+[type="checkbox"],
+[type="radio"] {
+   box-sizing: border-box;
+   padding: 0
+}
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+   height: auto
+}
+
+[type="search"] {
+   -webkit-appearance: textfield;
+   outline-offset: -2px
+}
+
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+   -webkit-appearance: none
+}
+
+::-webkit-file-upload-button {
+   -webkit-appearance: button;
+   font: inherit
+}
+
+details,
+menu {
+   display: block
+}
+
+summary {
+   display: list-item
+}
+
+canvas {
+   display: inline-block
+}
+
+template {
+   display: none
+}
+
+[hidden] {
+   display: none
+}
+
+/*! 其他通用樣式 v20170704 !*/
+html,
+body {
+   font-family: "Microsoft JhengHei UI", "Microsoft JhengHei", "PingFang TC", "HeiTi TC", "sans-serif"
+}
+
+a {
+   color: #333;
+   text-decoration: none
+}
+
+a:hover {
+   color: #0091DB;
+   text-decoration: none
+}
+
+#floatlayer {
+   position: fixed;
+   z-index: 1;
+   top: 70px;
+   left: auto;
+   width: 105px;
+   height: 500px;
+   display: none
+}
+
+.abgne_close_ad {
+   cursor: pointer
+}
+
+.gr_LeftSearch_Range {
+   font-size: 13px;
+   padding-left: 20px
+}
+
+.clear {
+   clear: both
+}
+
+.seo {
+   border: 0;
+   font: 0/0 a;
+   text-shadow: none;
+   color: transparent
+}
+
+.skype_pnh_container {
+   display: none !important
+}
+
+.skype_pnh_print_container {
+   display: inline !important
+}
+
+/*! 頁首 v20170707 !*/
+#TOP {
+   position: relative;
+   width: 980px;
+   margin-left: auto;
+   margin-right: auto;
+   overflow: hidden
+}
+
+#TOP #LifetourLogo {
+   display: block;
+   height: 60px;
+   width: 240px;
+   margin-top: 10px;
+   margin-bottom: 10px
+}
+
+#TOP #TOP_LINK {
+   position: absolute;
+   width: 254px;
+   height: 60px;
+   top: 0;
+   right: 0;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   box-sizing: border-box;
+   border: #B6E4FE solid 1px;
+   font-family: Cambria, PMingLiU, "SongTi TC", "serif"
+}
+
+#TOP #TOP_LINK ul {
+   margin: 0;
+   padding: 6px 6px 2px 6px;
+   list-style-type: none;
+   font-size: 0
+}
+
+#TOP #TOP_LINK ul li {
+   display: inline-block;
+   vertical-align: top;
+   width: 80px;
+   height: 25px;
+   font-size: 12px;
+   line-height: 25px
+}
+
+#TOP #TOP_LINK ul li img {
+   width: 21px;
+   height: 21px;
+   margin-right: 4px;
+   border-radius: 4px
+}
+
+#TOP #top-banner {
+   position: absolute;
+   width: 100px;
+   height: 60px;
+   top: 10px;
+   right: 264px;
+   display: block
+}
+
+#MENU_WRAPPER {
+   font-family: "Microsoft JhengHei UI", "Microsoft JhengHei", "PingFang TC", "HeiTi TC", "sans-serif";
+   font-weight: bold
+}
+
+#MENU_WRAPPER .MAIN_MENU_WRAPPER {
+   height: auto !important
+}
+
+#MENU_WRAPPER .MAIN_MENU_WRAPPER .MAIN_MENU {
+   width: 100%;
+   background-color: #0091db;
+   font-size: 0
+}
+
+#MENU_WRAPPER .MAIN_MENU_WRAPPER .MAIN_MENU ul {
+   text-align: center;
+   padding-top: 5px
+}
+
+#MENU_WRAPPER .MAIN_MENU_WRAPPER .MAIN_MENU ul li a {
+   display: inline-block;
+   vertical-align: top;
+   width: 80px;
+   height: 25px;
+   padding: 10px 2px 0px 2px;
+   text-decoration: none;
+   font-size: 16px;
+   color: #FFFFFF
+}
+
+#MENU_WRAPPER .MAIN_MENU_WRAPPER .MAIN_MENU ul li a:hover,
+#MENU_WRAPPER .MAIN_MENU_WRAPPER .MAIN_MENU ul li a.selected {
+   background-color: #ec1662
+}
+
+#MENU_WRAPPER .SUB_MENU_WRAPPER {
+   background-color: #ec1662;
+   padding-top: 5px
+}
+
+#MENU_WRAPPER .SUB_MENU_WRAPPER .SUB_MENU {
+   position: relative;
+   overflow: hidden;
+   margin-left: 5px;
+   margin-right: 5px;
+   height: 0;
+   -webkit-transition: all 200ms ease;
+   transition: all 200ms ease
+}
+
+#MENU_WRAPPER .SUB_MENU_WRAPPER .SUB_MENU ul {
+   display: none;
+   font-size: 0;
+   position: absolute;
+   top: 0
+}
+
+#MENU_WRAPPER .SUB_MENU_WRAPPER .SUB_MENU ul li a {
+   display: inline-block;
+   height: 25px;
+   line-height: 20px;
+   font-size: 13px;
+   color: #FFFFFF;
+   padding-left: 6px;
+   padding-right: 6px;
+   text-decoration: none
+}
+
+#MENU_WRAPPER .SUB_MENU_WRAPPER .SUB_MENU ul li a:hover {
+   text-decoration: underline
+}
+
+#MENU_WRAPPER .SUB_MENU_WRAPPER .SUB_MENU .SUB_MENU_0 {
+   left: 0px
+}
+
+#MENU_WRAPPER .SUB_MENU_WRAPPER .SUB_MENU .SUB_MENU_1 {
+   left: 27px
+}
+
+#MENU_WRAPPER .SUB_MENU_WRAPPER .SUB_MENU .SUB_MENU_2 {
+   left: 135px
+}
+
+#MENU_WRAPPER .SUB_MENU_WRAPPER .SUB_MENU .SUB_MENU_3 {
+   left: 10px
+}
+
+#MENU_WRAPPER .SUB_MENU_WRAPPER .SUB_MENU .SUB_MENU_4 {
+   left: 245px
+}
+
+#MENU_WRAPPER .SUB_MENU_WRAPPER .SUB_MENU .SUB_MENU_5 {
+   left: 180px
+}
+
+#MENU_WRAPPER .SUB_MENU_WRAPPER .SUB_MENU .SUB_MENU_6 {
+   left: 423px
+}
+
+#MENU_WRAPPER .SUB_MENU_WRAPPER .SUB_MENU .SUB_MENU_7 {
+   right: 80px
+}
+
+#MENU_WRAPPER .SUB_MENU_WRAPPER .SUB_MENU .SUB_MENU_8 {
+   left: 60px
+}
+
+#MENU_WRAPPER .SUB_MENU_WRAPPER .SUB_MENU .SUB_MENU_9 {
+   right: 0px
+}
+
+#MENU_WRAPPER .SUB_MENU_WRAPPER .SUB_MENU .SUB_MENU_10 {
+   right: 0px
+}
+
+#MENU_WRAPPER ul {
+   margin: 0;
+   padding: 0;
+   list-style-type: none
+}
+
+#MENU_WRAPPER ul li {
+   display: inline;
+   text-align: center
+}
+
+/*! 頁尾 v20170707 !*/
+#TAIL {
+   width: 980px;
+   height: 320px;
+   margin-left: auto;
+   margin-right: auto;
+   border: 1px solid #0091DB;
+   clear: both;
+   font-size: 12px;
+   line-height: 1.15;
+   font-family: "Microsoft JhengHei UI", "Microsoft JhengHei", "PingFang TC", "HeiTi TC", "sans-serif";
+   box-sizing: border-box;
+   margin-top: 15px;
+   margin-bottom: 15px
+}
+
+#TAIL .FOOTER_MENU {
+   background-color: #0091DB;
+   height: 30px;
+   text-align: center
+}
+
+#TAIL .FOOTER_MENU ul {
+   margin: 0;
+   padding: 0;
+   list-style-type: none
+}
+
+#TAIL .FOOTER_MENU ul li {
+   display: inline-block;
+   width: 110px;
+   text-align: center;
+   line-height: 29px;
+   font-family: "Microsoft JhengHei UI", "Microsoft JhengHei", "PingFang TC", "HeiTi TC", "sans-serif";
+   font-size: 15px
+}
+
+#TAIL .FOOTER_MENU ul li a {
+   color: #FFF;
+   text-decoration: none
+}
+
+#TAIL .FOOTER_MENU ul li a:hover {
+   text-decoration: none
+}
+
+#TAIL .contact {
+   position: relative;
+   margin: 15px;
+   width: auto
+}
+
+#TAIL .contact p {
+   margin: 0;
+   line-height: 1.5
+}
+
+#TAIL .contact .branch {
+   color: #FFFFFF;
+   background-image: url(/eWeb_lifetour/newpage/images/icon_branch.jpg);
+   background-repeat: no-repeat;
+   height: 60px;
+   top: 0px;
+   width: 100px;
+   display: block;
+   position: absolute;
+   right: 0px;
+   text-align: center;
+   padding-top: 10px;
+   padding-left: 55px;
+   font-size: 20px;
+   line-height: 24px;
+   text-decoration: none;
+   -webkit-transition: all 200ms ease;
+   transition: all 200ms ease
+}
+
+#TAIL .contact .branch:hover {
+   text-decoration: none
+}
+
+#TAIL .contact .tel {
+   margin: 0
+}
+
+#TAIL .lifetour_data {
+   position: relative;
+   clear: both;
+   width: 880px;
+   margin-right: auto;
+   margin-left: auto;
+   padding-top: 15px;
+   border-top: 1px dotted #999;
+   font-size: 0px
+}
+
+#TAIL .lifetour_data .footer_lifetour {
+   display: inline-block;
+   vertical-align: top;
+   height: 65px;
+   width: 250px;
+   background-image: url(/eWeb_lifetour/newpage/images/footer_logo.jpg)
+}
+
+#TAIL .lifetour_data .data_left {
+   display: inline-block;
+   vertical-align: top;
+   width: 290px;
+   margin-left: 24px;
+   letter-spacing: 1px;
+   font-size: 12px
+}
+
+#TAIL .lifetour_data .data_right {
+   display: inline-block;
+   vertical-align: top;
+   width: 310px;
+   letter-spacing: 1px;
+   font-size: 12px
+}
+
+#TAIL .lifetour_data p {
+   margin-top: 0;
+   margin-bottom: 0.5em
+}
+
+#TAIL .lifetour_data .mark {
+   padding-left: 280px
+}
+
+#TAIL .lifetour_data .mark a {
+   display: inline-block;
+   vertical-align: top
+}
+
+/*# sourceMappingURL=head_footer.css.map */
